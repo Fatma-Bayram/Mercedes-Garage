@@ -1,0 +1,374 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f5f5f5;
+    color: #171717;
+    line-height: 1.7;
+}
+
+.header {
+    min-height: 75px;
+    background: #080808;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 7%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.logo span {
+    color: #aaa;
+}
+
+.navbar {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #c4a45a;
+}
+
+.hero {
+    min-height: 570px;
+    background: linear-gradient(90deg, #080808 0%, #222 55%, #444 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.eyebrow {
+    color: #b39555;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.eyebrow) {
+    color: #ccc;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #b39555;
+    color: #111;
+    border: none;
+    padding: 13px 25px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: white;
+}
+
+.section {
+    padding: 75px 8%;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    text-align: center;
+    max-width: 950px;
+    margin: auto;
+}
+
+.intro > p:not(.eyebrow) {
+    color: #666;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #92743a;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.features {
+    background: #eaeaea;
+    text-align: center;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.feature-card {
+    background: white;
+    padding: 35px 20px;
+    border-bottom: 3px solid #b39555;
+}
+
+.feature-icon {
+    font-size: 35px;
+    color: #b39555;
+}
+
+.feature-card h3 {
+    margin: 15px 0 10px;
+}
+
+.feature-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+.page-banner {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.page-banner h1 {
+    font-size: clamp(30px, 5vw, 45px);
+}
+
+.page-banner > p:last-child {
+    color: #bbb;
+}
+
+.gallery-section {
+    max-width: 1250px;
+    margin: auto;
+}
+
+.search-area {
+    background: white;
+    padding: 25px;
+    margin-bottom: 35px;
+    border-left: 4px solid #b39555;
+}
+
+.search-area label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.search-area input {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 15px;
+    margin-bottom: 15px;
+    outline-color: #b39555;
+}
+
+#resultCount {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #666;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.car-card {
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.06);
+}
+
+.car-visual {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(135deg, #151515, #555);
+}
+
+.car-visual span {
+    font-size: 35px;
+    font-weight: 800;
+    opacity: .6;
+}
+
+.car-symbol {
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+.visual-two {
+    background: linear-gradient(135deg, #272727, #777);
+}
+
+.visual-three {
+    background: linear-gradient(135deg, #101820, #52606b);
+}
+
+.visual-four {
+    background: linear-gradient(135deg, #292020, #865b50);
+}
+
+.visual-five {
+    background: linear-gradient(135deg, #172a30, #667d80);
+}
+
+.car-info {
+    padding: 25px;
+}
+
+.car-category {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #a4874b;
+    font-weight: 700;
+}
+
+.car-info h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.car-info p:last-child {
+    font-size: 14px;
+    color: #666;
+}
+
+.no-results {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    color: #9b3939;
+    margin-top: 20px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-box {
+    background: white;
+    padding: 35px;
+    margin-bottom: 25px;
+    border-left: 4px solid #b39555;
+}
+
+.about-box p:not(.eyebrow) {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.footer {
+    background: #080808;
+    color: #aaa;
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 18px 5%;
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .navbar {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 55px 7%;
+    }
+
+    .section {
+        padding: 50px 5%;
+    }
+
+    .feature-grid,
+    .car-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-banner {
+        padding: 50px 15px;
+    }
+
+    .search-area {
+        padding: 18px;
+    }
+
+    .car-visual {
+        height: 190px;
+    }
+
+    .about-box {
+        padding: 22px;
+    }
+}
